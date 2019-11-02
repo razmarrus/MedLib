@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MedLib.CPage"
+             BackgroundColor="#B2EBF2">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0,20,0,0">
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <StackLayout x:Name="stackLayout" Spacing="18"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand" >
+        <BoxView WidthRequest="50" HeightRequest="100" />
+        <Label Text="  here is something " TextColor="#B2EBF2" FontSize="Large"/>
+        <Label x:Name="label"
+               TextColor="#78318f"
+                FontSize="Large"
+               Text="Pick your action"
+               VerticalOptions="Start"
+               HorizontalOptions="Center" >
+        </Label>
+        <Button x:Name="B1"
+                 TextColor="#3d1e6a"
+                Text="Find"
+                 FontSize="Large"
+                 BackgroundColor="#039BE5"
+                Clicked="Button_Clicked1"></Button>
+        <Button x:Name="B2"
+                 TextColor="#3d1e6a"
+                Text="Add"
+                 FontSize="Large"
+                BackgroundColor="#00ACC1"
+                 Clicked="Button_Clicked2"></Button>
+        <Button x:Name="B3" 
+            Text="View" 
+                 TextColor="#3d1e6a"
+                  FontSize="Large"
+                BackgroundColor="#00897B"
+            Clicked="Button_Clicked3"></Button>
+        <BoxView WidthRequest="50" HeightRequest="150" />
+    </StackLayout>
+</ContentPage>

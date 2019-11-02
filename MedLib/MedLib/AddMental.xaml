@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MedLib.AddMental"
+             BackgroundColor="#B2EBF2">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0,20,0,0">
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="B1" FontSize="Medium" BackgroundColor="#c093ca" HorizontalOptions="Center" VerticalOptions="Center" Text="Save" Clicked="Click"/>
+            <TableView>
+                <TableView.Root>
+                    <TableRoot>
+                        <TableSection Title="Add Mental disease" x:Name="Sec1">
+                            <EntryCell Label="Name:" Placeholder="input name" x:Name="Name"/>
+
+                        </TableSection>
+                        <TableSection Title="General data" x:Name="Sec2">
+                            <EntryCell Label="Development"  Placeholder="descibe development" x:Name="Dev"/>
+                            <EntryCell Label="Prevalence"  Placeholder="descibe prevalence" x:Name="Prev" />
+                            <EntryCell Label="Age"  Placeholder="enter prevalence" x:Name="Age" />
+                        </TableSection>
+                        <TableSection Title="Image" x:Name="Sec3">
+                            <EntryCell Label=""   Placeholder="" x:Name="WTF"/>
+                        </TableSection >
+                    </TableRoot>
+                </TableView.Root>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

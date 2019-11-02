@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MedLib.FPage"
+             BackgroundColor="#B2EBF2">
+    
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0,20,0,0">
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <ContentPage.Content BackgroundColor="#CE93D8">
+        <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Spacing="18">
+            <BoxView WidthRequest="50" HeightRequest="100" />
+            <Label Text="  here is something " TextColor="#B2EBF2" FontSize="Large"/>
+            <Button x:Name="B1"
+                    Text="Diseases"
+                    FontSize="Large"
+                    Clicked="Button_Clicked1"
+                    TextColor="#3d1e6a"
+                     BackgroundColor="#039BE5"/>
+            <Button x:Name="B2"
+                    TextColor="#3d1e6a"
+                    Text="English"
+                    FontSize="Large"
+                    Clicked="Button_Clicked2"
+                    BackgroundColor="#00ACC1"/>
+            <Button x:Name="B3"
+                    TextColor="#3d1e6a"
+                    Text="Русский"
+                    FontSize="Large"
+                    Clicked="Button_Clicked3"
+                     BackgroundColor="#00897B"/>
+
+            <Button x:Name="B4"
+                    Text="To closest hospital!"
+                    FontSize="Large"
+                    Clicked="Button_Clicked4"
+                    TextColor="#3d1e6a"
+                     BackgroundColor="#0288D1"/>
+            <BoxView WidthRequest="50" HeightRequest="150" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

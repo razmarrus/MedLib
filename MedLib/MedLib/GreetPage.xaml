@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MedLib.GreetPage"
+             BackgroundColor="#B2EBF2">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0,20,0,0">
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <StackLayout x:Name="stackLayout" Spacing="18"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand" >
+        <Label Text="  here is something " TextColor="#B2EBF2" FontSize="Large"/>
+        <BoxView WidthRequest="50" HeightRequest="100" />
+        <Label x:Name ="l1" 
+               FontSize="Large"
+               Text="Сhoose the type of disease"
+               TextColor="#78318f"
+        ></Label>
+        <Button x:Name ="B1" 
+            Text="Mental"
+                 TextColor="#3d1e6a"
+                FontSize="Large"
+                 BackgroundColor="#039BE5"
+                Clicked="Button_Clicked1"></Button>
+        <Button x:Name="B2"
+            Text="Genetic"
+                 TextColor="#3d1e6a"
+                FontSize="Large"
+    
+                BackgroundColor="#00ACC1"
+                 Clicked="Button_Clicked2"></Button>
+        <Button  x:Name="B3"
+            Text="Infections"  
+                  TextColor="#3d1e6a"
+                FontSize="Large"
+                BackgroundColor="#00897B"
+            Clicked="Button_Clicked3"></Button>
+        <BoxView WidthRequest="50" HeightRequest="150" />
+    </StackLayout>
+</ContentPage>

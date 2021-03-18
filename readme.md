@@ -9,13 +9,10 @@ More detailed description of the project is given below.
 
 ## Table of Contents
 
-- [Tasks](#tasks)
-  - [Overview](#overview)
-  - [Capabilities and Technology](#capabilities-and-technology)
-  - [Few more Screenshots](#few-more-screenshots)
+- [Overview](#overview)
+- [Capabilities and Technology](#capabilities-and-technology)
+- [Few more Screenshots](#few-more-screenshots)
 
-
-# Tasks
 
 ## Overview
 
@@ -41,7 +38,7 @@ Users are able to work with three types of diseases, each goes as **separate c# 
 
 In android version of app (all screenshots were taken from this version) it looks like this:
 
-![disease_type](imagine\disease_type.jpg)
+![disease_type](imagine/disease_type.jpg)
 
 
 **Pages** that implementing project functioning are presented as two related files with the same names but different extensions: *.cs* and *xaml*.  
@@ -80,7 +77,7 @@ A piece of code dedicated to it:
 
 language choice in the android application looks like this:
 
-![menu](imagine\main.jpg)
+![menu](imagine/main.jpg)
 
 
 
@@ -88,15 +85,21 @@ language choice in the android application looks like this:
 
 The page for a new disease addition
 
-![new_disease](imagine\new_disease.jpg)
+![new_disease](imagine/new_disease.jpg)
 
 List of stored genetic diseases 
 
-![disease_list](imagine\disease_list.jpg)
+![disease_list](imagine/disease_list.jpg)
 
 Information about ailment 
 
-![about](imagine\about.jpg)
+![about](imagine/about.jpg)
+
+Information management
+
+![management](imagine/action.jpg)
+
+
 
 
 
